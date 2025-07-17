@@ -1,0 +1,68 @@
+{
+  "name": "stats-command",
+  "version": "1.0.3",
+  "description": "Показывает расширенную статистику игрока и вычисляет КДР.",
+  "main": "index.js",
+  "author": "I_Sahorok",
+  "botpanel": {
+    "categories": [
+      "Клан",
+      "Команды"
+    ],
+    "icon": "chart-column-increasing",
+    "supportedHosts": [
+      "mc.mineblaze.net",
+      "mc.masedworld.net",
+      "mc.cheatmine.net",
+      "mc.dexland.org"
+    ],
+    "dependencies": {
+      "parser-keksik": "*"
+    },
+    "settings": {
+      "showHeader": {
+        "type": "boolean",
+        "label": "Показывать заголовок",
+        "description": "Включает или выключает строку 'Статистика игрока {player}:' перед основной информацией.",
+        "default": true
+      },
+      "header": {
+        "type": "string",
+        "label": "Заголовок",
+        "default": "Статистика игрока {player}:"
+      },
+      "statsLine": {
+        "type": "string",
+        "label": "Строка со статистикой",
+        "description": "Используйте {kills}, {deaths}, {kdr}, {onlineTime}.",
+        "default": "Убийств: {kills}, Смертей: {deaths}, КДР: {kdr}. Время в игре: {onlineTime}"
+      },
+      "notInClanMessage": {
+        "type": "string",
+        "label": "Сообщение 'Не в клане'",
+        "default": "Игрок {player} не состоит в вашем клане."
+      },
+      "playerOfflineMessage": {
+        "type": "string",
+        "label": "Сообщение 'Игрок оффлайн'",
+        "description": "Используйте {player} для подстановки ника.",
+        "default": "Игрок {player} не в сети."
+      },
+      "noPermsSeenMessage": {
+        "type": "string",
+        "label": "Сообщение 'Нет прав на /seen'",
+        "default": "Нет прав"
+      },
+      "errorStatsMessage": {
+        "type": "string",
+        "label": "Сообщение 'Ошибка статы'",
+        "default": "Не удалось получить статистику для игрока {player}."
+      },
+      "errorSeenMessage": {
+        "type": "string",
+        "label": "Сообщение 'Ошибка онлайна'",
+        "default": "Не удалось получить время в игре для {player}."
+      }
+    }
+  }
+}
