@@ -1,6 +1,6 @@
 {
   "name": "stats-command",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Показывает расширенную статистику игрока и вычисляет КДР.",
   "main": "index.js",
   "author": "I_Sahorok",
